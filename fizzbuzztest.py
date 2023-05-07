@@ -1,11 +1,17 @@
-print("Type a number")
+import sys
+
+from termcolor import colored
+
+print (colored("Type a number", "green"))
 num = int(input())
 
 if num < 20 :
-    print("fizz")
+    print(colored("fizz", "red"))
 
 elif num > 20 and num < 29 :
-    print("buzz")
+    print(colored("buzz" , "green"))
 
 elif num > 30 : 
-    print("wuzzy")
+    print(colored("wuzzy" , "blue"))
+
+
